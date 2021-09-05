@@ -131,6 +131,10 @@ main {
   color: var(--light-color);
 }
 
+.logo-alt span {
+  color: var(--background-color);
+}
+
 /*=== NAVIGATION ===================================================*/
 nav {
   display: flex;
@@ -435,4 +439,65 @@ nav.show div.icon-close {
   color: var(--bg-color);
 }
 
-/*=== SCROLL REVEAL ===================================================*/
+/*=== FOOTER ===================================================*/
+
+footer {
+  background-color: var(--light-color);
+}
+
+footer .logo {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+footer .brand p {
+  color: var(--light-text-color);
+  margin-bottom: 0.75rem;
+}
+
+footer i {
+  font-size: 1.5rem;
+  color: var(--light-text-color);
+}
+
+footer .social a {
+  margin-right: 2rem;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+footer .social a:hover {
+  transform: translateY(-8px);
+}
+
+/*=== BACK TO TOP ===================================================*/
+
+.back-to-top {
+  background: var(--light-color);
+  color: var(--light-text-color);
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  clip-path: circle();
+  line-height: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+  transform: translateY(100%);
+}
+
+.back-to-top.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*=== MEDIA QUERIES ===================================================*/
+/* extra large devices: 1200 > 
+large devices: 1023 >
+large devices: 992 >
+medium devices: 767 > */
+@media (min-width: 992px) {
+}
