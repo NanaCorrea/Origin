@@ -5,6 +5,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>marianadev.</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="assets/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,8 +20,9 @@
   </head>
   <body>
     <header id="header">
-      <nav class="container show">
+      <nav class="container">
         <a class="logo" href="#">mariana<span>dev</span>.</a>
+        <!-- menu -->
         <div class="menu">
           <ul class="grid">
             <li><a class="title" href="#home">Início</a></li>
@@ -27,8 +32,9 @@
             <li><a class="title" href="#contact">Contato</a></li>
           </ul>
         </div>
-        <div class="icon-menu"></div>
-        <div class="icon-close"></div>
+        <!-- /menu -->
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-close"></div>
       </nav>
     </header>
     <main>
@@ -49,18 +55,178 @@
       </section>
       <div class="divider-1"></div>
       <section class="section" id="about">
-        <div class="container grid">Sobre</div>
+        <div class="container grid">
+          <div class="image">
+            <img
+              src="images/mariana.png"
+              alt="Mulher de cabelos castanhos sorrindo."
+            />
+          </div>
+          <div class="text">
+            <h2 class="title">Sobre Mim</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+              saepe consequatur numquam voluptates iusto veritatis, illum enim
+              incidunt recusandae tempore quasi sequi dolore accusantium ipsam
+              esse unde atque rerum sunt.
+            </p>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              quidem reprehenderit possimus odio ducimus doloribus officia,
+              dolor beatae magnam aspernatur blanditiis omnis, ex aliquid autem
+              qui nesciunt amet repudiandae! Modi.
+            </p>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatibus ipsum velit vel, distinctio voluptates quo iusto
+              voluptas animi provident ipsa debitis praesentium exercitationem
+              pariatur, maxime tempore atque perferendis mollitia nemo?
+            </p>
+          </div>
+        </div>
       </section>
+      <div class="divider-2"></div>
       <section class="section" id="services">
-        <div class="container grid">Serviços</div>
+        <div class="container grid">
+          <header>
+            <h2 class="title">Serviços</h2>
+            <p>
+              Lorem, ipsum dolor sit amet
+              <strong>MarianaDev</strong> consectetur adipisicing elit.
+              Repudiandae similique delectus officia fuga laboriosam, illo
+              illum. Nesciunt earum placeat ut libero? Quia dolore cum, modi
+              velit in ad recusandae facere!
+            </p>
+          </header>
+          <div class="cards grid">
+            <div class="card">
+              <i class="icon-embed"></i>
+              <h3 class="title">Serviço 1</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                cum omnis nesciunt, impedit voluptates explicabo temporibus eius
+                cumque amet recusandae ipsum iure quis ducimus inventore vitae
+                laboriosam debitis? Molestiae, doloribus?
+              </p>
+            </div>
+            <div class="card">
+              <i class="icon-developer"></i>
+              <h3 class="title">Serviço 2</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ab
+                quia earum aspernatur quisquam ad, sed quibusdam officia
+                corporis iste aperiam hic explicabo error dignissimos
+                consectetur, illum debitis vitae tempore?
+              </p>
+            </div>
+            <div class="card">
+              <i class="icon-Visualstudio"></i>
+              <h3 class="title">Serviço 3</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                blanditiis ipsam, accusamus culpa, necessitatibus vel amet
+                voluptatum fuga eius, ad possimus porro laborum vero. Esse
+                tempore cum quia laudantium aliquid?
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
+      <div class="divider-1"></div>
       <section class="section" id="testimonials">
-        <div class="container grid">Depoimentos</div>
+        <div class="container">
+          <header>
+            <h2 class="title">Depoimentos</h2>
+          </header>
+          <div class="testimonials swiper-container">
+            <div class="swiper-wrapper">
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Odit ad vero totam nesciunt deleniti
+                    accusamus sequi saepe labore soluta voluptatibus, natus at
+                    ea non quae repudiandae similique dolorem. Earum, explicabo.
+                  </p>
+                  <cite
+                    ><img
+                      src="images/ariana.jpg"
+                      alt="Mulher loira sorrindo"
+                    />Ariana Santos</cite
+                  >
+                </blockquote>
+              </div>
+
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Odit ad vero totam nesciunt deleniti
+                    accusamus sequi saepe labore soluta voluptatibus, natus at
+                    ea non quae repudiandae similique dolorem. Earum, explicabo.
+                  </p>
+                  <cite
+                    ><img
+                      src="images/erika.jpg"
+                      alt="Mulher japonesa sorrindo"
+                    />Érika Kacuta</cite
+                  >
+                </blockquote>
+              </div>
+
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Odit ad vero totam nesciunt deleniti
+                    accusamus sequi saepe labore soluta voluptatibus, natus at
+                    ea non quae repudiandae similique dolorem. Earum, explicabo.
+                  </p>
+                  <cite
+                    ><img src="images/fabio.jpg" alt="Homem sorrindo" />Fábio
+                    Silva</cite
+                  >
+                </blockquote>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
       </section>
+      <div class="divider-2"></div>
       <section class="section" id="contact">
-        <div class="container grid">Contato</div>
+        <div class="container grid">
+          <div class="text">
+            <h2 class="title">Entre em contato com a gente!</h2>
+            <p>
+              Entre em contato comigo, ficarei feliz em tirar suas dúvidas e
+              ouvir suas críticas e sugestões.
+            </p>
+            <a
+              href="https://api.whatsapp.com/send?phone=5512991631790&text=Olá! Gostaria de informações."
+              class="button"
+              target="_blank"
+              ><i class="icon-whatsapp"></i>Entrar em contato</a
+            >
+          </div>
+          <div class="links">
+            <ul class="grid">
+              <li><i class="icon-phone"></i>(12) 99163-1790</li>
+              <li>
+                <i class="icon-map-pin"></i>R. Pedro Alves de Faria 200 - Jd
+                Santa Julia
+              </li>
+              <li><i class="icon-mail"></i>nana.filosofia@hotmail.com</li>
+            </ul>
+          </div>
+        </div>
       </section>
     </main>
     <footer></footer>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="/scripts/main.js"></script>
   </body>
 </html>
